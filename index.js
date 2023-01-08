@@ -16,7 +16,6 @@
 //3. Deduct personal relief and calculate PAYE then add it to NSSF
 //4. Calculate NHIF and add it to PAYE and NSSF 
 //5. Substract the above additions from Gross pay to get net pay
-
 //Create a class PayCalculator that:
 class PayCalculator{
 //Has two properties salary and benefits
@@ -27,15 +26,15 @@ class PayCalculator{
 //Has a get methods:
 //that calculate gross pay
 get grossPay(){
-    this
+    return this.salary + this.benefits
 }
 //that calculate NSSF
+
 //that calculate PAYE and deducts personal relief to get final figure
 //that calculate NHIF
 
 }
-
-
+let employed = new PayCalculator(1000,1000)
 
 //Create a NetPay function that:
 //Takes gross pay and:
