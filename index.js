@@ -17,3 +17,17 @@
 //4. Calculate NHIF and add it to PAYE and NSSF 
 //5. Substract the above additions from Gross pay to get net pay
 
+//Create a class PayCalculator that:
+//Has to properties salary and benefits
+//Has a get method:
+//that calculates gross pay
+//that calculates NSSF
+//that calculates PAYE and deducts personal relief to get final figure
+//that calculates NHIF
+
+//Create a NetPay function that:
+//Takes gross pay and:
+//deducts NSSF
+//deducts PAYE
+//deducts NHIF 
+//returns the resulting figure as net pay
