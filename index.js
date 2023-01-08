@@ -18,12 +18,24 @@
 //5. Substract the above additions from Gross pay to get net pay
 
 //Create a class PayCalculator that:
-//Has to properties salary and benefits
-//Has a get method:
-//that calculates gross pay
-//that calculates NSSF
-//that calculates PAYE and deducts personal relief to get final figure
-//that calculates NHIF
+class PayCalculator{
+//Has two properties salary and benefits
+    constructor(salary,benefits){
+        this.salary = salary;
+        this.benefits = benefits;
+    }
+//Has a get methods:
+//that calculate gross pay
+get grossPay(){
+    this
+}
+//that calculate NSSF
+//that calculate PAYE and deducts personal relief to get final figure
+//that calculate NHIF
+
+}
+
+
 
 //Create a NetPay function that:
 //Takes gross pay and:
