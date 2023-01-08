@@ -29,13 +29,18 @@ get grossPay(){
     return this.salary + this.benefits
 }
 //that calculate NSSF
-
+get nssf(){
+   let nssfValue = this.grossPay*0.06
+   nssfValue < 1080 ? nssfValue : nssfValue = 1080
+   return nssfValue
+}
 //that calculate PAYE and deducts personal relief to get final figure
 //that calculate NHIF
 
 }
 let employed = new PayCalculator(1000,1000)
 
+console.log(employed.nssf)
 //Create a NetPay function that:
 //Takes gross pay and:
 //deducts NSSF
