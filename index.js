@@ -10,3 +10,10 @@
 // 10% upto 24k,
 //there is not PAYE upto 24k as it is below the relief amount
 // 25% from 24k1 to 32.333k,30% above that
+
+//1. Add benefits and salary to get gross pay
+//2. Deduct NSSF and set it aside
+//3. Deduct personal relief and calculate PAYE then add it to NSSF
+//4. Calculate NHIF and add it to PAYE and NSSF 
+//5. Substract the above additions from Gross pay to get net pay
+
