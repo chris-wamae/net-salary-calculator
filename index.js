@@ -8,7 +8,7 @@
 //nssf is deducted before PAYE calculations 
 //personal relief 2.4k
 // 10% upto 24k,
-//there is not PAYE upto 24k as it is below the relief amount
+//there is no PAYE upto 25.08k as it is below the relief amount
 // 25% from 24k1 to 32.333k,30% above that
 
 //1. Add benefits and salary to get gross pay
@@ -35,12 +35,22 @@ get nssf(){
    return nssfValue
 }
 //that calculate PAYE and deducts personal relief to get final figure
+get paye(){
+if(this.grossPay <=25080){
+    return 0
+}
+else if(this.grossPay <= 32333){
+   return (this.grossPay - 25080) * 0.25
+}
+
+}
 //that calculate NHIF
 
 }
 let employed = new PayCalculator(1000,1000)
 
 console.log(employed.nssf)
+console.log(employed.paye)
 //Create a NetPay function that:
 //Takes gross pay and:
 //deducts NSSF
