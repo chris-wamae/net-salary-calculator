@@ -89,10 +89,16 @@ console.log(employed.paye);
 console.log(employed.nhif);
 
 //Create a NetPay function that:
-//Takes gross pay and:
-//deducts NSSF
-//deducts PAYE
-//deducts NHIF
+function netPay(salary,benefits){
+let pay = new PayCalculator(salary,benefits)
 //returns the resulting figure as net pay
-
-//testing branch 
+return (
+//Takes gross pay and:
+pay.grossPay - (
+//deducts NSSF
+pay.nssf + 
+//deducts PAYE
+pay.paye + 
+//deducts NHIF
+pay.nhif))
+} netPay()
