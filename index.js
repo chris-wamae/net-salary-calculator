@@ -42,12 +42,16 @@ if(this.grossPay <=25080){
 else if(this.grossPay <= 32333){
    return (this.grossPay - 25080) * 0.25
 }
-
+else if(this.grossPay >= 32334){
+    return ((this.grossPay - 25080) * 0.25) +
+    (this.grossPay - 33,413) * 0.3
+}
 }
 //that calculate NHIF
 
 }
-let employed = new PayCalculator(1000,1000)
+
+let employed = new PayCalculator(18000,18000)
 
 console.log(employed.nssf)
 console.log(employed.paye)
