@@ -82,15 +82,17 @@ class PayCalculator {
       : 1700;
   }
 }
-
+// tests
 let employed = new PayCalculator(1000, 10000);
-
 console.log(employed.nssf);
 console.log(employed.paye);
 console.log(employed.nhif);
+
 //Create a NetPay function that:
 //Takes gross pay and:
 //deducts NSSF
 //deducts PAYE
 //deducts NHIF
 //returns the resulting figure as net pay
+
+//testing branch 
